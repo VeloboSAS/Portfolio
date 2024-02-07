@@ -5,7 +5,7 @@ import "./style.css"
 const Project = ({title, img}) => {
   return (
     <li className="project">
-      <a href="./project/project-page1.html">
+      <a href="./project">
         <img
           src={img}
           alt={title}
