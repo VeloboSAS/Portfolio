@@ -1,8 +1,7 @@
 import React from "react";
-import "./style.css";
-import sun from "../../img/icons/Sun.svg";
-import moon from "../../img/icons/Moon.svg";
 import { NavLink } from "react-router-dom";
+import BtnDarkMode from "../btnDarkMode/btnDarkMode";
+import "./style.css";
 
 const Navbar = () =>{
 
@@ -16,11 +15,8 @@ const Navbar = () =>{
         <NavLink to="/" className="logo">
           <strong>Freelancer</strong> portfolio
         </NavLink>
+        <BtnDarkMode/>
 
-        <button className="dark-mode-btn">
-          <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
-          <img src={moon} alt="Dark mode" className="dark-mode-btn__icon" />
-        </button>
         <ul className="nav-list">
           <li className="nav-list__item">
             <NavLink
